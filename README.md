@@ -18,6 +18,25 @@ Acessar: http://localhost:3000
 ```bash
 docker build -t minha-api .
 ```
+# Docker Build
+
+O comando abaixo é usado para criar uma imagem Docker a partir de um **Dockerfile**:
+
+```bash
+docker build -t minha-api .
+```
+
+## Explicação dos parâmetros
+
+- **`docker`**: chama o Docker.
+- **`build`**: informa ao Docker que ele deve construir (**build**) uma imagem.
+- **`-t`**: significa **tag**, ou seja, define o nome da imagem.
+- **`minha-api`**: é o nome que será dado à imagem criada.
+- **`.` (ponto)**: representa o **contexto da construção**.
+
+O ponto (`.`) significa:
+
+> **"Utilize a pasta atual como contexto e procure nela o arquivo `Dockerfile`."**
 
 ### Executar o container
 
