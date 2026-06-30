@@ -44,6 +44,9 @@ O ponto (`.`) significa:
 docker run -d -p 3000:3000 --name api-node minha-api
 ```
 
+> A opção `-d` significa **detached**, ou seja, executa os contêineres em segundo plano.
+Se você não usar a opção -d, os contêineres serão executados em primeiro plano (foreground). Isso significa que o terminal ficará exibindo os logs em tempo real e permanecerá ocupado enquanto os contêineres estiverem em execução.
+
 ### Parar e remover o container
 
 ```bash
